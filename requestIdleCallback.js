@@ -19,7 +19,7 @@ window.requestIdleCallback =
   function (cb) {
     return setTimeout(function () {
       cb({ 
-        didTimeout:false,
+        didTimeout: false,
         timeRemaining: function () {
           return Number.MAX_VALUE;
         }
