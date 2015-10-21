@@ -23,7 +23,7 @@ window.requestIdleCallback = window.requestIdleCallback ||
       cb({ 
         didTimeout: false,
         timeRemaining: function () {
-          return Number.MAX_VALUE;
+          return 50;
         }
       });
     }, 1);
