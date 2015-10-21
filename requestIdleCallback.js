@@ -14,6 +14,9 @@
  * permissions and limitations under the License.
  */
  
+/*
+ * @see https://developers.google.com/web/updates/2015/08/using-requestidlecallback
+ */
 window.requestIdleCallback =
   window.requestIdleCallback ||
   function (cb) {
