@@ -17,8 +17,7 @@
 /*
  * @see https://developers.google.com/web/updates/2015/08/using-requestidlecallback
  */
-window.requestIdleCallback =
-  window.requestIdleCallback ||
+window.requestIdleCallback = window.requestIdleCallback ||
   function (cb) {
     return setTimeout(function () {
       cb({ 
@@ -30,8 +29,7 @@ window.requestIdleCallback =
     }, 1);
   }
 
-window.cancelIdleCallback =
-  window.cancelIdleCallback ||
+window.cancelIdleCallback = window.cancelIdleCallback ||
   function (id) {
     clearTimeout(id);
   } 
