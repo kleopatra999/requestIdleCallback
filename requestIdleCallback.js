@@ -19,8 +19,8 @@
  */
 window.requestIdleCallback = window.requestIdleCallback ||
   function (cb) {
-    var start = Date.now();
     return setTimeout(function () {
+      var start = Date.now();
       cb({ 
         didTimeout: false,
         timeRemaining: function () {
